@@ -25,23 +25,72 @@ img{
 	min-width: 65%;
 }
 
-header {
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.header {
+	overflow: hidden;
+	animation: 1s ease-out 0s 1 slideInFromLeft;
 	background-color: #666;
 	padding: 10px;
-	text-align: left;
-	font-size: 20px;
+}
+
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.title{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.header-right{
+	float: right;
+}
+.header-right a:hover {
+	background-color: #751a1a;
+	color: black;
+}
+
+.header-right a.active{
+	background-color: crimson;
 	color: white;
 }
 
+
+
 footer {
+	animation: 1s ease-out 0s 1 slideInFromRight;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
+	padding: 12px;
 	background-color: #777;
-	color: white;
-	text-align: center;
+	color: black;
+	text-align: left;
 	font-size: 20px;
+	font-weight:bold;
 }
 
 #prevBtn{
@@ -52,6 +101,7 @@ footer {
 	font-size: 45px;
 	color: white;
 	cursor: pointer;
+	
 	}
 #nextBtn{
 	position: absolute;
