@@ -25,6 +25,7 @@ prevBtn.addEventListener('click',()=> {
 	carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 	
 });
+	
 
 carouselSlide.addEventListener('transitionend', () => {
 	console.log(carouselImages[counter]);
