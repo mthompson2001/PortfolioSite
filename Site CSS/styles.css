@@ -3,6 +3,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
+}
+body{
+background-color: #9898fa;
 }
 
 .carousel-container{
@@ -18,12 +22,11 @@
 	
 }
 .hyperlinkImage{
-	
 	width: 25%;
 	overflow: hidden;
 	margin-right:auto;
 	margin-left:auto;
-	display: flex;
+	display: block;
 	height: 300px;
 }
 .hyperlinkImageVertical{
@@ -137,4 +140,18 @@ footer {
 .clear{
 	clear:both;
 	height:50px;
+}
+
+.imgSize{
+	padding:25px;
+	display:block;
+	min-height:10%;
+	min-width:10%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.textAlign{
+	text-align:center;
+	font-size:25px;
+	font-weight:bold;
 }
